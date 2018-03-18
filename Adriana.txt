@@ -1,0 +1,20 @@
+Hi Rami:
+
+Below are my answers.
+
+1, 3 and 4 looks good.
+2. The code for Mammen's two point distribution is wrong. It should be: W(r1,:)=0.5-(sqrt(5)/5)*binornd(...,p), p is as you wrote it.
+
+
+Now in terms of questions 2 and 3 I did not understand exactly your point. If you are talking about the proper bootstrap test? Do you mean we are going to estimate the alpha and beta? For now we do not estimate anything (alpha and/or beta). Shouldn’t we first plot the response function for different alpha and beta? i.e. find v1 for different alpha and beta?  Yes, that's right. Could you please try this for different alpha-stable distributions with different alphas and betas (the scale is irrelevant as you use the t-stat)? And also for double Pareto with different alphas? My hope is that v1 will not vary much with beta, only with alpha (which means we would need to only estimate alpha). Also consider 90, 95 and 99% CI.
+ 
+If you are referring to the excel files I sent you last month, I believe we can not do this now as it may be the case that for different estimated alpha and beta different proportion of the data need to be bootstrap, no?
+I do not refer to them.
+ 
+I understand in your previous email you mentioned this
+ 
+(about 95% of the data as it is written in lines 10-11 in MonteCarloAlgorithm.m and line 11 in test1.m, see attachment). That is fine by me for now.
+ 
+So do you mean always take v1=95% of the data? Hence no estimation is required at all? I think you mean h1 instead of v1, see above (h1=0.90, 0.95 and 0.99)
+
+Best, Adriana
