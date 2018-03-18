@@ -1,0 +1,51 @@
+Git from scratch
+
+I assume you have done the configiration so no configiration needed
+
+Nevigate to this folder of interest to put it on git
+
+cd '/c/Users/Rami New/Desktop/Website/Hello World/MyWebPage'
+
+Create this as repository
+
+git init
+
+
+git status
+
+nothing to commit yet
+
+this is because there is no file in it. create a file and name it whatever you please
+
+git add --all
+git status
+
+git commit -m 'My first Matlab commit'
+
+
+ importing an existing repository.
+
+Push something to github
+
+First we need to set origin
+
+git remote add origin https://github.com/rsc05/TWB_Critical_Values.git
+
+where we are pushing
+git remote -v
+
+git push origin master
+
+pull 
+git clone https://github.com/rsc05/TWB_Critical_Values.git
+
+
+if you do anychanges and want to save it to git hub
+
+simply write 
+git status
+
+then 
+git add -A
+
+git commit -m 'Did little changes to git'
