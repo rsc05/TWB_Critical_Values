@@ -49,3 +49,5 @@ then
 git add -A
 
 git commit -m 'Did little changes to git'
+
+git push origin master
